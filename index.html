@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utkarsh Raghuvanshi — Developer</title>
+<meta name="description" content="Portfolio of Utkarsh Raghuvanshi, full stack web developer and CS student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- gutter line-number rail, decorative + structural, echoes code editor -->
+<div class="gutter" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="noise" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <a href="#top" class="nav__brand">
+    <span class="nav__prompt">~/</span>utkarsh<span class="nav__cursor">_</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#about"><span class="tag">01</span>about</a>
+    <a href="#skills"><span class="tag">02</span>skills</a>
+    <a href="#projects"><span class="tag">03</span>projects</a>
+    <a href="#experience"><span class="tag">04</span>experience</a>
+    <a href="#education"><span class="tag">05</span>education</a>
+    <a href="#contact"><span class="tag">06</span>contact</a>
+  </nav>
+  <a class="nav__resume" href="assets/Utkarsh_Raghuvanshi_Resume.pdf" download>Resume ↓</a>
+  <button class="nav__burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">// full stack developer · b.tech cse '28</p>
+      <h1 class="hero__title">
+        <span class="terminal-line">
+          <span class="terminal-prompt">utkarsh@dev:~$</span>
+          <span id="typewriter" class="terminal-type"></span><span class="terminal-caret">|</span>
+        </span>
+      </h1>
+      <p class="hero__sub">I build clean, functional interfaces — dashboards, e‑commerce demos and small tools —
+        while learning the craft one project, one hackathon, one commit at a time.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__stack" id="hero-stack">
+        <span>JavaScript</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>GSAP</span>
+      </div>
+    </div>
+    <div class="hero__panel" aria-hidden="true">
+      <div class="code-window">
+        <div class="code-window__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="code-window__title">about-me.js</span>
+        </div>
+        <pre class="code-window__body"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Utkarsh Raghuvanshi"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Full Stack Developer"</span>,
+  <span class="c-prop">based</span>: <span class="c-str">"Meerut, India"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"JS"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"MongoDB"</span>],
+  <span class="c-prop">learning</span>: <span class="c-str">"React, DSA"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"open to internships"</span>,
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2>About me</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__lead">
+        I'm a second-year Computer Science student at Meerut Institute of Engineering &amp; Technology,
+        currently sitting at an 8.0 CGPA while spending most of my free time shipping small, complete
+        products rather than half-finished tutorials.
+      </p>
+      <p>
+        My recent work spans finance dashboards, productivity tools, and a React + Redux e‑commerce demo —
+        each one built to practice a specific skill: state management, data visualization, or clean
+        component architecture. I recently wrapped a one‑month full stack internship at Decode Labs, and
+        I compete in hackathons and coding contests (Code Storm 2026 — 6th place) when I'm not building
+        side projects.
+      </p>
+      <div class="about__facts">
+        <div class="fact"><span class="fact__num">8.0</span><span class="fact__label">CGPA / 10</span></div>
+        <div class="fact"><span class="fact__num">6th</span><span class="fact__label">Code Storm 2026</span></div>
+        <div class="fact"><span class="fact__num">2</span><span class="fact__label">Hackathons</span></div>
+        <div class="fact"><span class="fact__num">5+</span><span class="fact__label">Shipped projects</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="bars">
+          <li><span class="bars__label">JavaScript</span><span class="bars__track"><span class="bars__fill" style="--w:85%"></span></span></li>
+          <li><span class="bars__label">Java</span><span class="bars__track"><span class="bars__fill" style="--w:75%"></span></span></li>
+          <li><span class="bars__label">C</span><span class="bars__track"><span class="bars__fill" style="--w:65%"></span></span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <ul class="bars">
+          <li><span class="bars__label">HTML5 / CSS3</span><span class="bars__track"><span class="bars__fill" style="--w:90%"></span></span></li>
+          <li><span class="bars__label">React (learning)</span><span class="bars__track"><span class="bars__fill" style="--w:60%"></span></span></li>
+          <li><span class="bars__label">GSAP</span><span class="bars__track"><span class="bars__fill" style="--w:65%"></span></span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Data</h3>
+        <ul class="bars">
+          <li><span class="bars__label">Node.js / Express</span><span class="bars__track"><span class="bars__fill" style="--w:65%"></span></span></li>
+          <li><span class="bars__label">MongoDB</span><span class="bars__track"><span class="bars__fill" style="--w:60%"></span></span></li>
+          <li><span class="bars__label">MySQL</span><span class="bars__track"><span class="bars__fill" style="--w:55%"></span></span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="chips">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span><span>IntelliJ IDEA</span><span>Chart.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="projects__grid" id="projects-grid">
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">01 / dashboard</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3>FinTrack Pro</h3>
+        <p>A responsive personal‑finance dashboard with income/expense tracking, real‑time balance
+          calculation and interactive cash‑flow charts.</p>
+        <ul class="project-card__stack">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Chart.js</li>
+        </ul>
+        <a href="https://github.com/utkarshraghuvanshi07/Fintrack-pro" target="_blank" rel="noopener" class="project-card__link">View repo →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">02 / productivity</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3>Productivity Dashboard</h3>
+        <p>A task‑management dashboard with full CRUD, filtering and status tracking to organize daily
+          work and focus sessions.</p>
+        <ul class="project-card__stack">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <a href="https://github.com/utkarshraghuvanshi07/productivity-dashboard" target="_blank" rel="noopener" class="project-card__link">View repo →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">03 / e‑commerce</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3>SkyMart</h3>
+        <p>A production‑quality e‑commerce demo built with React, Redux Toolkit, TanStack Query and
+          Tailwind CSS — engineered as a portfolio piece, not a coursework submission.</p>
+        <ul class="project-card__stack">
+          <li>React</li><li>Redux Toolkit</li><li>TanStack Query</li><li>Tailwind</li>
+        </ul>
+        <a href="https://github.com/utkarshraghuvanshi07/SkyMart-react-" target="_blank" rel="noopener" class="project-card__link">View repo →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">04 / brand site</span>
+          <span class="project-card__year">2025</span>
+        </div>
+        <h3>Two Leaves Tea</h3>
+        <p>A clean, premium, fully responsive tea‑brand website with interactive UI elements, built to
+          practice layout and visual polish.</p>
+        <ul class="project-card__stack">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <a href="https://github.com/utkarshraghuvanshi07/twoleavestea-responsive-" target="_blank" rel="noopener" class="project-card__link">View repo →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">05 / state mgmt</span>
+          <span class="project-card__year">2025</span>
+        </div>
+        <h3>Redux Toolkit Todo App</h3>
+        <p>A todo application built with React, Redux Toolkit and Vite to learn predictable state
+          management in real applications.</p>
+        <ul class="project-card__stack">
+          <li>React</li><li>Redux Toolkit</li><li>Vite</li>
+        </ul>
+        <a href="https://github.com/utkarshraghuvanshi07/redux-toolkit-todo-app" target="_blank" rel="noopener" class="project-card__link">View repo →</a>
+      </article>
+
+      <article class="project-card project-card--more">
+        <div class="project-card__top">
+          <span class="project-card__tag">06 / sandbox</span>
+          <span class="project-card__year">ongoing</span>
+        </div>
+        <h3>React Playground</h3>
+        <p>An ongoing collection of small builds documenting my progress from React fundamentals toward
+          more advanced patterns.</p>
+        <a href="https://github.com/utkarshraghuvanshi07?tab=repositories" target="_blank" rel="noopener" class="project-card__link">See all repos →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / TIMELINE -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2>Experience &amp; achievements</h2>
+    </div>
+    <div class="timeline">
+      <svg class="timeline__line" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="2" y1="0" x2="2" y2="100" vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <span class="timeline__date">Jun – Jul 2026</span>
+        <h3>Full Stack Development Intern — Decode Labs (Remote)</h3>
+        <p>Completed a one‑month virtual internship: worked mentor‑guided through practical web
+          development assignments and project milestones, sharpening problem‑solving through hands‑on tasks.</p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <span class="timeline__date">2026</span>
+        <h3>6th Place — Code Storm 2026</h3>
+        <p>HackerRank‑based coding competition organized by the MIET ISTE Student Chapter.</p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <span class="timeline__date">2026</span>
+        <h3>Hack Heist 2026</h3>
+        <p>36‑hour offline hackathon — collaborated with a team to design and build a solution under
+          strict time constraints.</p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <span class="timeline__date">2025</span>
+        <h3>Hackathon Havoc 2.0</h3>
+        <p>28‑hour offline hackathon — contributed to idea development, rapid prototyping and
+          collaborative problem‑solving.</p>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <span class="timeline__date">2026</span>
+        <h3>Certifications</h3>
+        <p>Decode Labs Full Stack Development Virtual Internship · Google for Education AI
+          Implementation Program — Student AI Masterclass.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2>Education</h2>
+    </div>
+    <div class="edu__grid">
+      <div class="edu-card">
+        <span class="edu-card__date">Aug 2024 – Aug 2028 (expected)</span>
+        <h3>B.Tech. Computer Science</h3>
+        <p>Meerut Institute of Engineering &amp; Technology (MIET), Meerut — affiliated to AKTU</p>
+        <span class="edu-card__meta">CGPA 8.0 / 10</span>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__date">2024</span>
+        <h3>Senior Secondary — CBSE</h3>
+        <p>Moon Light Public School, Sisauli, Uttar Pradesh</p>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__date">2022</span>
+        <h3>Secondary — CBSE</h3>
+        <p>Sunrise Public School, Budhana, Uttar Pradesh</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">06</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact__grid">
+      <div>
+        <p class="contact__lead">Open to internships and full‑stack opportunities — happy to talk about
+          a role, a project, or just trade notes on a hackathon.</p>
+        <a href="mailto:utkarshraghuvanshi094@gmail.com" class="contact__email">utkarshraghuvanshi094@gmail.com</a>
+        <p class="contact__phone">+91 9720173110</p>
+      </div>
+      <div class="contact__links">
+        <a href="https://www.linkedin.com/in/utkarsh-raghuvanshi-6a60b8402" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+        <a href="https://github.com/utkarshraghuvanshi07/" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        <a href="https://leetcode.com/u/utkarshraghuvanshi/" target="_blank" rel="noopener">LeetCode <span>↗</span></a>
+        <a href="https://www.hackerrank.com/profile/utkarshraghuvan8" target="_blank" rel="noopener">HackerRank <span>↗</span></a>
+        <a href="assets/Utkarsh_Raghuvanshi_Resume.pdf" download>Download résumé <span>↓</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Utkarsh Raghuvanshi · <span id="year"></span></p>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
